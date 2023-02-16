@@ -5,6 +5,10 @@ body {
 
 header {
   background-color: #fff4e7;
+}
+
+header,
+main {
   padding: 0 5em;
 }
 
@@ -28,9 +32,13 @@ header nav ul li {
   text-align: center;
 }
 
-.header-section h1,
-p {
+.header-section h1 {
   width: 60%;
+  margin: 0 auto;
+}
+.header-section p {
+  width: 60%;
+
   margin: 0 auto;
 }
 
@@ -45,6 +53,7 @@ p {
 
 .header-section img {
   width: 100%;
+  margin-bottom: 3em;
 }
 
 .explore-btn {
@@ -56,12 +65,104 @@ p {
   margin-bottom: 3em;
 }
 
+main {
+  margin: 3em 0;
+}
+
+p {
+  color: #727272;
+}
+
+.main-section-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+.photo-gallery {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.photo-gallery img {
+  width: 100%;
+}
+
+.our-features {
+  padding: 2em;
+}
+
+.our-features h1 {
+  font-size: 2.5em;
+  line-height: 0.5em;
+}
+
+.our-features span {
+  color: #727272;
+}
+
+.special {
+  color: #ff900e;
+}
+
+.main-section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4em;
+}
+
+.box-1 {
+  width: 90%;
+}
+
+.box-2 {
+  position: relative;
+}
+
+.box-1 h1 {
+  font-size: 2.5em;
+  line-height: 0.5em;
+}
+
+.special-orange {
+  border-left: 0.5em solid #ff900e;
+  padding-left: 1.5em;
+}
+
+.box-2 img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.special-box {
+  background-color: #ff900e;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  width: 30%;
+  border-radius: 0.5em;
+  position: absolute;
+  bottom: 4em;
+  left: -2em;
+}
+
 /* Responsive media quary section  */
 
 @media only screen and (max-width: 576px) {
-  header {
+  header,
+  main {
     padding: 0 1.5em;
   }
+
   header nav {
     display: block;
   }
@@ -73,12 +174,48 @@ p {
     margin-left: 0em;
     margin-bottom: 1em;
   }
+
   .header-section h1,
   p {
     width: 100%;
   }
+
   .header-section h1 {
     font-size: 2em;
     font-weight: bold;
+  }
+
+  .main-section-1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0em;
+  }
+
+  .photo-gallery {
+    padding: 0em;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+
+  .our-features {
+    padding: 0em;
+  }
+
+  .main-section-2 {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4em;
+  }
+
+  .box-1 {
+    width: 100%;
+  }
+
+  .box-1 h1 {
+    font-size: 2em;
+    line-height: 0.5em;
+  }
+
+  .special-box {
+    bottom: 4em;
+    left: -1.5em;
   }
 }
